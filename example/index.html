@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown.js</title>
+<link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <p>
+    <button class="danger hidden" id="cancel-trigger" title="Cancel Deletion"></button>
+    <button class="danger" id="new-delete-trigger" title="Delete">Delete</button>
+    <button id="reload" onClick="reload()">Reload</button>
+  </p>
+  <!-- Gumroad library -->
+  <script src="./countdown.js"></script>
+  <!-- ES5 Example app -->
+  <script src="./app.js"></script>
+  <!-- Custom script to find next focusable element -->
+  <script src="./findNextTabStop.js"></script>
+  <!-- Custom script to reload page -->
+  <script src="./reload.js"></script>
+</body>
+
+</html>

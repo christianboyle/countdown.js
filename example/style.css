@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 2em;
+  background: #efefe9;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button,
+button {
+  color: #666;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0.25rem solid #7e2525;
+}
+
+#cancel-trigger {
+  position: relative;
+  right: -5px;
+}
+
+#reload:focus {
+  outline: 0.25rem solid #666;
+}
+
+button[disabled] {
+  cursor: text;
+  opacity: 0.5;
+}
+
+.show-cancel {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#cancel-trigger {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#cancel-trigger:before {
+  content: '✕';
+  font-weight: bold;
+}
+
+.danger {
+  color: #7e2525;
+  background: #fadfdf;
+}
+
+.hidden {
+  display: none;
+}
